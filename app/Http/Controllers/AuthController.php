@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Game;
 use Illuminate\Http\Request;
 
 class AuthController extends Controller
@@ -11,6 +12,7 @@ class AuthController extends Controller
     }
 
     public function dashboardview(){
-        return view('auth.dashboard');
+        $games = Game::all();
+        return view('auth.dashboard', compact('games'));
     }
 }

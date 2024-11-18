@@ -12,7 +12,7 @@
                 <p>Creato da: {{$game->user->name}}</p>
                 <div class="d-flex gap-2">
                     @auth
-                        @if ($game->user_id == Auth::id())
+                        @if ($game->user_id == Auth::id() || Auth::user()->admin == true)
                         <a class="btn btn-warning" href="{{route('game.edit', $game)}}">Modifica</a>
                         <form action="{{route('game.destroy', $game)}}" method="POST">
                             @csrf

@@ -38,6 +38,15 @@
                             <label for="message" class="form-label">Messaggio</label>
                             <textarea class="form-control" name="messaggio" id="message" cols="50" rows="5"></textarea>
                         </div>
+                        @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        @endif
                         <button type="submit" class="btn btn-outline-dark">Invia</button>
                     </form>
                     @endguest

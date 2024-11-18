@@ -6,10 +6,11 @@ use App\Mail\Assistenza;
 use App\Mail\Confirmation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use App\Http\Requests\RequestMailCustom;
 
 class MailController extends Controller
 {
-    public function Confirmation(Request $request){
+    public function Confirmation(RequestMailCustom $request){
         $name = $request->name;
         $email = $request->email;
         $messaggio = $request->messaggio;
