@@ -1,0 +1,124 @@
+.bg-navbar{
+  background: rgb(159,4,101);
+  background: linear-gradient(90deg, rgba(159,4,101,1) 30%, rgba(171,0,255,1) 70%);
+}
+
+.header-home{
+  min-height: 100vh;
+  background:url(/public/media/header-home.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-create{
+  min-height: 100vh;
+  background:url(/public/media/add.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titolo{
+  background-color: rgba(159,4,101,1);
+  padding: 30px;
+  border-radius: 20px;
+  font-size: 5rem;
+}
+body {
+  background: rgb(159,4,101);
+  background: linear-gradient(90deg, rgba(159,4,101,1) 30%, rgba(171,0,255,1) 70%);
+}
+
+/* From Uiverse.io by vamsidevendrakumar */
+.card-lista{
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.card-lista:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #6A2C70;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 10px solid #6A2C70;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(0deg);
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.card-back {
+  background-color: #6A2C70;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 10px solid #6A2C70;
+
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+}
+
+.titolo-dettaglio{
+  padding: 30px;
+  border-radius: 20px;
+  font-size: 5rem;
+}
+
+.header-edit{
+  min-height: 150vh;
+  background-size: cover !important;
+  background-position: bottom !important;
+  background-attachment: fixed !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-form{
+  border-radius: 20px;
+  background: rgb(159,4,101);
+  background: linear-gradient(90deg, rgba(159,4,101,1) 30%, rgba(171,0,255,1) 70%);
+  padding: 30px;
+  backdrop-filter: blur(20px);
+}
+
+.vh-custom{
+  min-height: 30vh ;
+}
+
+.size-custom{
+  font-size: 5rem;
+}
